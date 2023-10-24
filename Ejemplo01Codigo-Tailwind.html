@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial de Tailwind CSS</title>
+    <!-- Enlace al archivo CSS de Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Diseño de Encabezado y Barra de Navegación -->
+    <div class="bg-blue-500 text-white p-4">
+        <h1 class="text-2xl lg:text-4xl">Mi Sitio Web</h1>
+        <nav class="lg:ml-auto">
+            <a href="#" class="mr-4 lg:mr-8">Inicio</a>
+            <a href="#">Acerca de</a>
+        </nav>
+    </div>
+
+    <!-- Diseño de Tarjetas Interactivas -->
+    <div class="flex flex-wrap">
+        <!-- Repite este bloque para más productos -->
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+                <img src="Imagenes/ordenador.png" alt="Ordenadores" class="w-full h-32 object-cover rounded-t-lg">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Ordenadores</h2>
+                    <p class="text-gray-700">Descripción del producto. Lorem ipsum dolor sit amet...</p>
+                </div>
+            </div>
+        </div>
+        <!-- Repite este bloque para más productos -->
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+                <img src="Imagenes/monitores.png" alt="Monitores" class="w-full h-32 object-cover rounded-t-lg">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Monitores</h2>
+                    <p class="text-gray-700">Descripción del producto. Lorem ipsum dolor sit amet...</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+                <img src="Imagenes/Componentes.png" alt="Componentes" class="w-full h-32 object-cover rounded-t-lg">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Componentes</h2>
+                    <p class="text-gray-700">Descripción del producto. Lorem ipsum dolor sit amet...</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+                <img src="Imagenes/perifericos.png" alt="Perifericos" class="w-full h-32 object-cover rounded-t-lg">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Perifericos</h2>
+                    <p class="text-gray-700">Descripción del producto. Lorem ipsum dolor sit amet...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario de Contacto Estilizado -->
+    <form class="max-w-md mx-auto p-4 border rounded-md shadow-lg">
+        <h2 class="text-2xl font-semibold mb-4">Contacto</h2>
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">
+                Nombre
+            </label>
+            <input class="border p-2 rounded w-full" type="text" id="nombre" placeholder="Tu Nombre">
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                Email
+            </label>
+            <input class="border p-2 rounded w-full" type="email" id="email" placeholder="correo@example.com">
+        </div>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">
+            Enviar
+        </button>
+    </form>
+
+</body>
+
+</html>
